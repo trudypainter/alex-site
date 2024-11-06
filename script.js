@@ -6,7 +6,7 @@ localStorage.setItem("visitorCount", visitorCount);
 // Update visitor counter display
 document.getElementById(
   "visitor-counter"
-).textContent = `Visitors: ${visitorCount}`;
+).textContent = `You have blessed this site ${visitorCount} times!`;
 
 // Add sparkles following cursor
 document.addEventListener("mousemove", (e) => {
