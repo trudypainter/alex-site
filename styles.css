@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+  font-family: "Comic Sans MS", cursive;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.marquee {
+  background: #000000;
+  padding: 10px;
+  margin-bottom: 20px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.divider {
+  width: 100%;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ffffff;
+  text-shadow: 3px 3px 0 #ff1493, -3px -3px 0 #ff69b4;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.welcome-gif,
+.email-gif {
+  margin: 20px 0;
+}
+
+#visitor-counter {
+  background: #000000;
+  color: #00ff00;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 2px solid #00ff00;
+  font-family: "Courier New", monospace;
+  margin: 20px 0;
+}
+
+.construction {
+  margin: 20px 0;
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.8em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content p {
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.content p:hover {
+  transform: scale(1.1);
+}
