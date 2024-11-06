@@ -44,3 +44,11 @@ document.querySelector(".content p").addEventListener("click", () => {
     confettiNumber: 100,
   });
 });
+
+function triggerConfetti() {
+  const jsConfetti = new JSConfetti();
+  jsConfetti.addConfetti({
+    emojis: ["✨", "⭐", "💫", "🌟"], // You can customize the emojis
+    confettiNumber: 50,
+  });
+}
